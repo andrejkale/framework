@@ -16,7 +16,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 public class MainPage extends AbstractPage {
-    private final Logger logger = LogManager.getRootLogger();
     private final String BASE_URL = "https://mbox2.i.ua/?_rand";
 
 	private final By userNameLocator = By.xpath("//span[@class='user_name']");

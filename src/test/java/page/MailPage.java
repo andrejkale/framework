@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MailPage extends AbstractPage {
-    private final Logger logger = LogManager.getRootLogger();
     private final String PAGE_URL = "https://mbox2.i.ua/compose";
     private final By inboxMailLocator = By.xpath("//a[contains(@href, 'INBOX')]");
 
