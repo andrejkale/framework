@@ -8,9 +8,6 @@ import page.MainPage;
 import service.TestDataCreator;
 import service.UserCreator;
 
-
-import static org.testng.Assert.assertEquals;
-
 public class CreateMailTest extends CommonConditions {
     @Test
     public void canCreateEmail() {
@@ -22,7 +19,7 @@ public class CreateMailTest extends CommonConditions {
                 .createNewMail()
                 .createAndSendMail(testData.getTestEmail(), testData.getTestSubject(), testData.getTestEmailText())
                 .returnToInboxMail();
-        assertEquals(testData.getTestSubject(), mailPage.getLastMailSubject());
+        mailPage.verifyMailSubject(mailPage.getLastMailSubject(), testData.getTestSubject());
     }
 }
 

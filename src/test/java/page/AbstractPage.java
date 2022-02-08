@@ -11,10 +11,12 @@ public abstract class AbstractPage {
     protected final Logger logger = LogManager.getRootLogger();
 
     protected abstract AbstractPage openPage();
-    //protected final int WAIT_TIMEOUT_SECONDS = 10;
+
     protected final Duration WAIT_TIMEOUT_DURATION = Duration.ofSeconds(10);
 
     protected AbstractPage(WebDriver driver) {
         this.driver = driver;
     }
+
+    protected abstract void addScreenShot();
 }
