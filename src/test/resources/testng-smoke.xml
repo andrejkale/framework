@@ -6,8 +6,9 @@
     </listeners>
     <test name="UserAccess"   >
         <classes>
+            <class name="test.UserLoginWithWrongCredentials" />
             <class name="test.UserLoginTests" />
-            <class name="test.CreateMailTest" />
+            <!--<class name="test.CreateMailTest" />-->
         </classes>
     </test>
 </suite>
