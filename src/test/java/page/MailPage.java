@@ -66,6 +66,7 @@ public class MailPage extends AbstractPage {
                 .until(ExpectedConditions.presenceOfElementLocated(inboxMailLocator));
         logger.info("User opens inbox page");
         inboxMail.click();
+        addScreenShot();
         return new MainPage(driver);
     }
 
